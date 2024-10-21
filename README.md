@@ -38,11 +38,11 @@ the flow of traffic through the light. Along with acceleration times of the cars
 pass through the light.
 
 ### Current Implementations
-2 traffic lights, East and North <br\>
-Cars moving in and out of Queues <br\>
-Wait time averages for the lights <br\>
-Timer-based control at 25 tick cycles <br\>
+2 traffic lights, East and North <br \>
+Cars moving in and out of Queues <br \>
+Wait time averages for the lights <br \>
+Timer-based control at 25 tick cycles <br \>
 
 ### To-be Implemented
-Sensor based control <br\>
-Heavy and normal traffic flows <br\>
+Sensor based control <br \>
+Heavy and normal traffic flows <br \>
