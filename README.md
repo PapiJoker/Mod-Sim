@@ -36,3 +36,13 @@ the same as having another north/east lane as this model does not implement turn
 traffic. Other limitations is cars reaction time to a light turning green could change
 the flow of traffic through the light. Along with acceleration times of the cars to 
 pass through the light.
+
+### Current Implementations
+2 traffic lights, East and North <br />
+Cars moving in and out of Queues <br />
+Wait time averages for the lights <br />
+Timer-based control at 25 tick cycles <br />
+
+### To-be Implemented
+Sensor based control <br />
+Heavy and normal traffic flows <br />
