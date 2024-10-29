@@ -89,12 +89,12 @@ if __name__ == '__main__':
         rdm = random.randint(1, 100)
         if rdm <= goal:
             return True
-    def average(list):
-        return sum(list) / len(list)
+    def average(input_list):
+        return sum(input_list) / len(input_list)
 
     NorthTL = TrafficLight("GREEN") #init of North light at Green
     EastTL = TrafficLight("RED") #init of East light at Red
-    # --------------------------------------Timer-Based Busy Traffic-------------------------------------------
+    # --------------------------------------Timer-Based Busy Traffic--------------------------------------------
     print("Timer-based data busy traffic:")
     timer_busy = LightCycle(False,"Busy") #sensor false, traffic busy (car shows up every tick)
 
@@ -102,8 +102,8 @@ if __name__ == '__main__':
     print("Timer-based data normal traffic:")
     timer_normal = LightCycle(False, "Normal") #sensor false, traffic normal (car shows up every other tick)
 
-    #----------------------------------Sensor-Based Heavy Traffic---------------------------------------------
-    print("Sensor-Based data heavy traffic:")
+    #----------------------------------Sensor-Based Heavy Traffic-----------------------------------------------
+    print("Sensor-Based data busy traffic:")
     sensor_heavy = LightCycle(True, "Busy") #sensor true, traffic busy (car shows up every tick)
 
     # ----------------------------------Sensor-Based Normal Traffic---------------------------------------------
