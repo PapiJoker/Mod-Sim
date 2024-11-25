@@ -42,7 +42,6 @@ pass through the light.
 Cars moving in and out of Queues <br />
 Wait time averages for the lights <br />
 Timer-based control at 25 tick cycles <br />
-
-### To-be Implemented
-Sensor based control <br />
-Heavy and normal traffic flows <br />
+Sensor based control with queue length 5 or less timer is set to 5 <br />
+Heavy and normal traffic flows - heavy a car arrives every tick,
+normal a car arrives every other tick <br />
