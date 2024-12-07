@@ -8,7 +8,7 @@ timer based and sensor based light controls.
 
 ### Running the Simulation
 To download the repository and dependencies:
-1. Clone this repository by running `git clone https://github.com/PapiJoker/QA-Project.git` in the folder where you want the project located.
+1. Clone this repository by running `git clone https://github.com/PapiJoker/Mod-Sim.git` in the folder where you want the project located.
 2. Open the project folder by running `cd Mod-Sim`.
 3. Install the dependencies by running `pip install -r requirements.txt`.
 
