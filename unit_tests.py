@@ -33,7 +33,24 @@ def test_TrafficLightChangeState_LightIsGreen():
     # Assert
     assert expected == Light.state
 
-def test_SensorCheck_PassTimeris5():
+def test_SensorCheckLimitBelow_PassTimeris5():
+    # Arrange
+    wait_que = []
+    sensor_target = 5
+    expected = 5
+    for i in range(4):
+        wait_que.append(Car())
+
+    # Act
+    if len(wait_que) <= sensor_target:
+        timer = 5
+    else:
+        timer = 25
+
+    # Assert
+    assert expected == timer
+
+def test_SensorCheckLimitOn_Timeris5():
     # Arrange
     wait_que = []
     sensor_target = 5
@@ -50,12 +67,12 @@ def test_SensorCheck_PassTimeris5():
     # Assert
     assert expected == timer
 
-def test_SensorCheck_FailTimeris25():
+def test_SensorCheckLimitAbove_Timeris25():
     # Arrange
     wait_que = []
     sensor_target = 5
     expected = 25
-    for i in range(15):
+    for i in range(6):
         wait_que.append(Car())
 
     # Act

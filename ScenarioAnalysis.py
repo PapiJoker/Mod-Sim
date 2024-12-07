@@ -31,13 +31,13 @@ def full_cycle(north_sensor,east_sensor,north_traffic,east_traffic):
 
         NorthTL.change_state()  # North to Red on first call
         EastTL.change_state()  # East to Green on first call
-        timer = 20
+        timer = 75
         if NorthTL.state=="GREEN": #if sensor is true will change timer based on queue size
             if north_sensor:
                 if len(north_que) <= 5: #5 or less timer is 5
                     timer = 5
                 else: # >5 cars timer will be 25
-                    timer = 20
+                    timer = 75
         elif EastTL.state == "GREEN":
             if east_sensor:
                 if len(east_que) <= 5:
@@ -122,7 +122,7 @@ if __name__ == '__main__':
     all_average = []
 
     for l in range(30):
-        temp = full_cycle(north_sensor = False,north_traffic = "Normal",east_sensor = False,east_traffic = "Busy")
+        temp = full_cycle(north_sensor = False,north_traffic = "Busy",east_sensor = False,east_traffic = "Busy")
         east_average.append(temp[0])
         north_average.append(temp[1])
         all_average.append(temp[2])
