@@ -40,6 +40,10 @@ with 25 ticks for the green cycle. If there are fewer cars in the queue then the
 will cycle green for only 5 ticks. This should show a wait time decrease
 for other lights.
 
+### Scenario Analysis Program
+For ScenarioAnalysis.py to change how the program functions open the file in an IDE or notepad.
+You will edit line 125 of the code to the desired scenario, by setting north_sensor, north_traffic, east_sensor, and east_traffic.
+For the sensor it is a boolean of True or False, and for the traffic it is either "Busy" or "Normal".
 
 ### Limitations
 The limitations of the model is it only implements two directions with two lanes. 
