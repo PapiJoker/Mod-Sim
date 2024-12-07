@@ -6,10 +6,22 @@ The goal of this model is to simulate an intersection between a northbound
 road and an eastbound road. To better understand the differences in wait times for
 timer based and sensor based light controls.
 
+### Running the Simulation
+To download the repository and dependencies:
+1. Clone this repository by running `git clone https://github.com/PapiJoker/QA-Project.git` in the folder where you want the project located.
+2. Open the project folder by running `cd Mod-Sim`.
+3. Install the dependencies by running `pip install -r requirements.txt`.
+
+To execute the program:
+1. Open command terminal and navigate to the folder with TrafficLightSim.py file.
+2. Type in `python TrafficLightSim.py` and output will show data.
+To run the scenario analysis:
+1. Type in `python ScenarioAnalysis.py` and output data will show.
+
 
 ### Implementation
-The plans for how the intersection is to be simulated. Is to have two different traffic
-flow types. One busy and one more normalized. In a study done on traffic flow during 
+The model is implemented with two different traffic
+flow types. One busy and one more normal. In a study done on traffic flow during 
 busy times cars would arrive to the intersection every second. While in a more normal
 traffic setting cars would arrive every 2 seconds to the intersection. Once cars arrive
 at a light they are added into a queue and once it is their time to go their wait time
@@ -23,9 +35,9 @@ their wait time by one. Upon being removed from the queue the wait time for the 
 will be recorded into a list.
 
 For the sensor based light control, the green light queue will be tested for size.
-If the queue has *INSERT AMOUNT* of cars in the queue the light will cycle as normal
+If the queue has 6 or more cars in the queue the light will cycle as normal
 with 25 ticks for the green cycle. If there are fewer cars in the queue then the light
-will cycle green for only *INSERT TIME* ticks. This should show a wait time decrease
+will cycle green for only 5 ticks. This should show a wait time decrease
 for other lights.
 
 
